@@ -1,5 +1,24 @@
-import "@/styles/globals.css";
+import '../styles/globals.css';
+import { AppProvider } from '../components/AppContext';
+import { NavProvider } from '../context/NavContext';
+import { UserProvider } from '../context/UserContext';
+import { PriceProvider } from '../context/PriceContext';
+import { SkillProvider } from '@/context/SkillContext';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <NavProvider>
+      <AppProvider>        
+          <UserProvider>
+            <SkillProvider>
+            <PriceProvider>
+              <Component {...pageProps} />
+            </PriceProvider>
+            </SkillProvider>
+          </UserProvider>
+      </AppProvider>
+    </NavProvider>
+  );
 }
+
+export default MyApp;
