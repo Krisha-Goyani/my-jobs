@@ -1,26 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useData } from '../context/DataContext';
 import StyledHeading from './StyledHeading';
 
 const PastWorks = () => {
   const { pastWorks } = useData();
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Show only first 2 items if not expanded
+  const visibleWorks = isExpanded ? pastWorks : pastWorks.slice(0, 2);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
 
   return (
     <div className="mt-10">
       <StyledHeading>Past Works</StyledHeading>
       <div className="mt-4 relative">
-        {/* Red timeline line */}
-        <div className="absolute left-[5px] top-2 bottom-8 w-[2px] bg-red-500" />
+        {/* Red timeline line - Extended to reach the View more button */}
+        <div className="absolute left-[5px] top-2 bottom-[14px] w-[2px] bg-text-red" />
         
-        {pastWorks.map((work) => (
-          <div key={work.id} className="pb-4 relative">
+        {visibleWorks.map((work) => (
+          <div key={work.id} className="pb-7 relative font-circular-std">
             <div className="flex items-center gap-2">
               {/* Red dot with white border */}
-              <div className="w-3 h-3 rounded-full bg-red-500 ring-2 ring-white relative z-10" />
+              <div className="w-3 h-3 rounded-full bg-text-red ring-2 ring-white relative z-10" />
               <h3 className="font-medium">{work.title}</h3>
             </div>
-            <p className="text-gray-600 text-sm mt-1 ml-5">{work.name}, {work.date}</p>
-            <p className="mt-2 ml-5">{work.description}</p>
+            <p className="text-text-gray font-normal text-sm ml-5">{work.name}, {work.date}</p>
+            <p className="my-5 ml-5 font-normal text-text-black-primary">{work.description}</p>
             <div className="flex gap-2 mt-3 ml-5">
               {work.images.map((image, index) => (
                 <div key={index} className="w-[104px] h-[104px] rounded-xl overflow-hidden">
@@ -42,11 +50,18 @@ const PastWorks = () => {
           </div>
         ))}
         
-        {/* View more button with red dot */}
-        <div className="relative">
-          <div className="w-3 h-3 rounded-full bg-red-500 ring-2 ring-white relative z-10" />
-          <button className="text-red-500 font-medium ml-5">View more</button>
-        </div>
+        {/* View more/less button with red dot */}
+        {pastWorks.length > 2 && (
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-text-red ring-2 ring-white relative z-10" />
+            <button 
+              onClick={toggleExpand}
+              className="text-text-red hover:text-red-700 font-medium transition-colors"
+            >
+              {isExpanded ? 'View less' : 'View more'}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

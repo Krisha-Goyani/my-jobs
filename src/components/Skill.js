@@ -11,8 +11,8 @@ const Skill = () => {
             <div className="mt-4 flex flex-col gap-3 max-w-[776px] w-full ">
                 {skills.map((skill, index) => (
                     <div key={index} className=" bg-bg-blue-light rounded-lg px-5 py-3 ">
-                        <h3 className="text-sm font-medium">{skill.category}</h3>
-                        <p className="text-sm text-[var(--black-tertiary)] mt-2">
+                        <h3 className="text-sm text-text-black-secondary font-medium font-circular-std">{skill.category}</h3>
+                        <p className="font-circular-std text-sm text-text-gray-tertiary mt-2">
                             {skill.expanded ? skill.fullDescription : skill.description}
                             {skill.hasMore && (
                                 <button 

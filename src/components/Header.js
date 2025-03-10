@@ -10,7 +10,7 @@ const Header = () => {
     <header className="sticky top-0 z-[999] w-full shadow">
       <div className="container mx-auto md:h-36 flex flex-col justify-between items-center">
         <div className="flex xs:px-4 md:px-16 xs:py-5 md:pt-7 justify-between items-center w-full">
-          <span className="pt-3 text-sm md:flex items-center gap-2 xs:hidden md:block">
+          <span className="font-circular-std pt-3 text-sm md:flex items-center gap-2 xs:hidden md:block">
             English{" "}
             <Image
               src="/images/arrow-down.png"
@@ -47,7 +47,7 @@ const Header = () => {
                 width={24}
                 height={24}
               />
-              <span className="text-sm">Rone Bennett</span>
+              <span className="font-circular-std text-sm">Rone Bennett</span>
             </div>
           </div>
           <div className="sm:block md:hidden">

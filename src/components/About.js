@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div className="max-w-[776px] w-full h-[99px] mb-10">
             <StyledHeading>About</StyledHeading>
-            <p className="text-sm mt-3 text-base text-[var(--black-secondary)] font-normal leading-[24px]">{userData.about}</p>
+            <p className="font-circular-std text-sm mt-3 text-base text-text-black-primary font-normal leading-[24px]">{userData.about}</p>
         </div>
     );
 };

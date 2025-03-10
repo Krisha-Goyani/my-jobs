@@ -6,10 +6,10 @@ const Name = () => {
   const { userData } = useContext(UserContext);
   return (
     <div className="mb-8">
-      <h1 className="md:text-4xl xs:text-2xl font-bold font-oswald">
+      <h1 className="md:text-4xl xs:text-2xl font-bold ">
         {userData.name}
       </h1>
-      <p className="flex items-center gap-2 text-sm mt-3 text-lg text-[var(--gray-tertiary)] font-medium">
+      <p className="font-circular-std flex items-center gap-2 text-sm mt-3 text-lg text-text-gray font-medium">
         <Image className="h-3 w-3" src="/images/star.png" alt="star" width={13} height={13} />{" "}
         {userData.rating} • {userData.reviews} Reviews 
         <span className="hidden md:inline">• {userData.experience}</span>

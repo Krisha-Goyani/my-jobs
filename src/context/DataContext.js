@@ -19,6 +19,14 @@ export const DataProvider = ({ children }) => {
       date: "02/27/2020",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       images: ["/images/h1.png", "/images/b1.png"]
+    },
+    {
+      id: 3,
+      title: "Handwork",
+      name: "Tom Hardy",
+      date: "02/27/2020",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      images: ["/images/h1.png", "/images/b1.png"]
     }
   ];
 
@@ -70,6 +78,14 @@ export const DataProvider = ({ children }) => {
       },
       {
         id: 5,
+        rating: 5,
+        category: "Glazier",
+        text: "We hired for a significant project, and the results were exceptional. The professional demonstrated impressive craftsmanship and took great care in every aspect of the job. They provided valuable advice and were responsive to any changes we requested. Although there were a few minor issues durin...",
+        author: "Emily Thompson",
+        date: "1 year ago"
+      },
+      {
+        id: 6,
         rating: 5,
         category: "Glazier",
         text: "We hired for a significant project, and the results were exceptional. The professional demonstrated impressive craftsmanship and took great care in every aspect of the job. They provided valuable advice and were responsive to any changes we requested. Although there were a few minor issues durin...",
