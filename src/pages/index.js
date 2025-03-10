@@ -14,10 +14,10 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <div className="text-black bg-sky-200 w-full">
+    <div className="text-black  w-full">
       <Header />
       <div className="container mx-auto">
-        <div className="md:px-16 xs:px-4 bg-container-bg">
+        <div className="md:px-16 xs:px-4 ">
           <HeroImage />
           <div className="flex justify-between max-w-[1310px] w-full">
             <div className="relative md:pl-9 md:pr-16 xs:pt-5 md:pt-2 max-w-[856x] w-full">
