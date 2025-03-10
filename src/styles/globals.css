@@ -17,8 +17,7 @@
 
   @font-face {
     font-family: 'Circular Std';
-    src: url('/font/Circular Std Font.ttf') format('woff2'),
-         url('/font/Circular Std Font.ttf') format('woff');
+    src: url('/font/Circular Std Font.ttf') format('truetype');
     /* font-weight: normal; */
     font-style: normal;
     font-display: swap;

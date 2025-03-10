@@ -9,7 +9,7 @@ const AdditionalInfo = () => {
   return (
     <div className="mb-8">
       <StyledHeading>Additional Info</StyledHeading>
-      <div className="space-y-4 mt-4">
+      <div className="space-y-4 mt-5">
         {userData.additionalInfo.map((info) => (
           <div key={info.id} className="flex gap-4 items-center bg-bg-gray-light border border-border-gray-light rounded-xl py-4 px-5">
               <Image

@@ -32,7 +32,7 @@ export const DataProvider = ({ children }) => {
 
   const reviews = {
     summary: {
-      average: 4.0,
+      average: 3.0,
       totalRatings: 3197,
       totalReviews: 2060,
       distribution: [

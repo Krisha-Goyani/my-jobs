@@ -9,39 +9,45 @@ export const SkillProvider = ({ children }) => {
     {
       category: "General > Brickalyer",
       description: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying",
-      hasMore: false
+      fullDescription: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying",
+      expanded: false
     },
     {
       category: "General > Brickalyer",
       description: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finis...",
-      hasMore: true,
-      expanded: false,
-      fullDescription: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finishing"
+      fullDescription: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying",
+      expanded: false
+    },
+    {
+      category: "General > Brickalyer",
+      description: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, CuttingCommunication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills.",
+      fullDescription: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, CuttingCommunication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills.",
+      expanded: false
     },
     {
       category: "General > Brickalyer",
       description: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying",
-      hasMore: false
+      fullDescription: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying",
+      expanded: false
     },
     {
       category: "General > Brickalyer",
       description: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying",
-      hasMore: false
-    },
-    {
-      category: "General > Brickalyer",
-      description: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying",
-      hasMore: false
+      fullDescription: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying",
+      expanded: false
     }
   ]);
 
   const toggleExpand = (index) => {
     setSkills(skills.map((skill, i) => {
       if (i === index) {
+        const isExpanding = !skill.expanded;
         return {
           ...skill,
-          expanded: !skill.expanded,
-          description: skill.expanded ? skill.description : skill.fullDescription
+          expanded: isExpanding,
+          description: isExpanding 
+            ? skill.fullDescription 
+            : skill.fullDescription.substring(0, 150) + '...'
         };
       }
       return skill;

@@ -26,7 +26,7 @@ const HomePage = () => {
       <div className="container mx-auto">
         <div className="md:px-16 xs:px-4 bg-container-bg">
           <HeroImage />
-          <div className="md:flex justify-between max-w-[1310px] w-full">
+          <div className="lg:flex justify-between max-w-[1310px] w-full">
             <div className="relative md:pl-9 md:pr-16 xs:pt-5 md:pt-2 max-w-[856x] w-full">
               <Name />
               <div className="md:hidden"><PriceTable /></div>
@@ -57,7 +57,7 @@ const HomePage = () => {
                   <div className="absolute bottom-1/2 translate-y-1/2 left-0 right-0 z-20 px-4 ">
                     <button 
                       onClick={toggleMobileView}
-                      className="w-full max-w-md mx-auto bg-black text-white py-3 px-4 rounded-full text-base font-medium block"
+                      className="w-72 h-14 px-11 py-3 max-w-md mx-auto bg-black text-white py-3 px-4 rounded-full text-base font-medium block"
                     >
                       VIEW MORE
                     </button>
@@ -82,13 +82,26 @@ const HomePage = () => {
               </div>
             </div>
             
-            <div className="max-w-[434px] w-full">
-              <div className="md:block hidden"><PriceTable /></div>
-              {/* Additional content */}
-              <div className={`mt-8 ${!isMobileExpanded ? 'md:block hidden' : 'block'}`}>
-                <Badges />
-                <TradeCertificates /> 
-                <AdditionalInfo />
+            {/* Right sidebar content with responsive layout */}
+            <div className="lg:max-w-[434px] xs:hidden md:block w-full">
+              {/* PriceTable and Badges row */}
+              <div className="md:flex md:gap-4 lg:block">
+                <div className="md:w-1/2 lg:mb-10 lg:w-full md:block hidden">
+                  <PriceTable />
+                </div>
+                <div className="md:w-1/2 lg:w-full">
+                  <Badges />
+                </div>
+              </div>
+              
+              {/* TradeCertificates and AdditionalInfo row */}
+              <div className="xs:hidden md:block md:flex md:gap-4 lg:block mt-8">
+                <div className="md:w-1/2 lg:w-full">
+                  <TradeCertificates />
+                </div>
+                <div className="md:w-1/2 lg:w-full">
+                  <AdditionalInfo />
+                </div>
               </div>
             </div>
           </div>
