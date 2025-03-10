@@ -6,13 +6,13 @@ const FooterSection = ({ title, children, isOpen, onToggle }) => {
   return (
     <div className="md:mb-0 mb-4">
       <button 
-        className="md:hidden w-full flex items-center justify-between text-red-600 font-medium mb-4"
+        className="md:hidden w-full flex gap-3 items-center text-red-600 font-medium mb-4"
         onClick={onToggle}
       >
-        {title} <span>{isOpen ? '▼' : '▲'}</span>
+        {title} <span>{isOpen ? '▲' : '▼'}</span>
       </button>
       <h3 className="hidden md:block flex gap-6 text-text-red-secondary text-xl font-bold mb-6">{title}</h3>
-      <div className={`${isOpen ? 'block' : 'hidden md:block'}`}>
+      <div className={`${isOpen ? 'hidden md:block' : 'block'}`}>
         {children}
       </div>
     </div>
@@ -21,7 +21,11 @@ const FooterSection = ({ title, children, isOpen, onToggle }) => {
 
 const Footer = () => {
   const { footerData } = useData();
-  const [openSections, setOpenSections] = useState({});
+  const [openSections, setOpenSections] = useState({
+    about: false,
+    help: false,
+    download: false
+  });
 
   const toggleSection = (section) => {
     setOpenSections(prev => ({
@@ -31,8 +35,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-black text-white py-12">
-      <div className="container mx-auto px-16">
+    <footer className="bg-black text-white py-5">
+      <div className="container mx-auto md:px-16 px-4">
         <div className="md:flex md:justify-between max-w-[1310px] w-full">
           {/* Left Section */}
           <div className="md:flex md:gap-20 md:mb-0 mb-8">
@@ -124,10 +128,10 @@ const Footer = () => {
               <h3 className="text-xl font-bold mb-1">{footerData.contact.title}</h3>
               <p className="text-lg font-normal text-text-gray-light mb-7">{footerData.contact.description}</p>
               <div className="flex md:justify-end justify-start gap-4">
-                <button className="w-52 h-14 bg-text-red text-lg font-medium text-white px-6 py-2 rounded-full hover:bg-red-700">
+                <button className="xs:w-36 xs:h-11 md:w-52 md:h-14 bg-text-red text-lg font-medium text-white md:px-6 md:py-2 px-4 py-2 rounded-full hover:bg-red-700">
                   Contact us
                 </button>
-                <button className="w-52 h-14 border border-border-red text-sm font-medium text-white px-8 py-2 rounded-full hover:bg-red-600/10 flex items-center gap-2">
+                <button className="xs:w-44 xs:h-11 md:w-52 md:h-14  border border-border-red text-sm font-medium text-white md:px-8 md:py-2 px-4 py-2 rounded-full hover:bg-red-600/10 flex items-center gap-2">
                   <Image 
                     src="/images/whatsapp.png" 
                     alt="WhatsApp"
@@ -150,15 +154,15 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="enter your email address"
-                className="bg-transparent text-lg font-medium text-text-gray-light border border-border-red rounded-full px-6 py-2 flex-1 md:w-[470px] md:h-14"
+                className="xs:w-60 xs:h11 bg-transparent text-lg font-medium text-text-gray-light border border-border-red rounded-full px-6 py-2 flex-1 md:w-[470px] md:h-14"
               />
-              <button className="bg-text-red text-lg font-medium text-white px-6 py-2 rounded-full hover:bg-red-700 md:w-52 md:h-14">
+              <button className="xs:w-24 xs:h-11 bg-text-red text-lg font-medium text-white md:px-6 md:py-2 px-4 py-2 rounded-full hover:bg-red-700 md:w-52 md:h-14">
                 Sign up
               </button>
             </div>
           </div>
              {/* Copyright */}
-        <div className="text-end self-end text-sm text-gray-400">
+        <div className="font-circular-std font-normal xs:mt-8 xs:text-center md:text-end md:self-end text-sm md:text-gray-400">
           {footerData.copyright}
           </div>
         </div>
