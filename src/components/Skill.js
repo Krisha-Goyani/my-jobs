@@ -8,9 +8,9 @@ const Skill = () => {
     return (
         <div className="mt-8">
             <StyledHeading>Skills</StyledHeading>
-            <div className="mt-4 flex flex-col gap-4">
+            <div className="mt-4 flex flex-col gap-3 max-w-[776px] w-full ">
                 {skills.map((skill, index) => (
-                    <div key={index} className="bg-[#F8F9FC] rounded-lg p-4">
+                    <div key={index} className=" bg-bg-blue-light rounded-lg px-5 py-3 ">
                         <h3 className="text-sm font-medium">{skill.category}</h3>
                         <p className="text-sm text-[var(--black-tertiary)] mt-2">
                             {skill.expanded ? skill.fullDescription : skill.description}

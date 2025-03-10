@@ -4,20 +4,23 @@ import { NavProvider } from '../context/NavContext';
 import { UserProvider } from '../context/UserContext';
 import { PriceProvider } from '../context/PriceContext';
 import { SkillProvider } from '@/context/SkillContext';
+import { DataProvider } from '../context/DataContext';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <NavProvider>
-      <AppProvider>        
+    <DataProvider>
+      <NavProvider>
+        <AppProvider>        
           <UserProvider>
             <SkillProvider>
-            <PriceProvider>
-              <Component {...pageProps} />
-            </PriceProvider>
+              <PriceProvider>
+                <Component {...pageProps} />
+              </PriceProvider>
             </SkillProvider>
           </UserProvider>
-      </AppProvider>
-    </NavProvider>
+        </AppProvider>
+      </NavProvider>
+    </DataProvider>
   );
 }
 

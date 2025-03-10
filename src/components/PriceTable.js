@@ -9,7 +9,7 @@ const PriceTable = () => {
   }
 
   return (
-    <div className="price-table w-[434px] rounded-3xl border border-border-green-light border-2">
+    <div className="price-table rounded-3xl  border-border-green border-2">
       <h2 className="mt-2 text-xl font-bold py-2 px-4 font-circular-air-pro text-center">
         Price Table
       </h2>

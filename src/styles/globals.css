@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 
 :root {
   --background: #ffffff;
@@ -43,4 +45,47 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('/fonts/oswald.bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Add this class to use the Oswald font */
+.font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* @font-face {
+  font-family: Circular Std;
+  src: url('/font/Circular/ Std/Font.ttf');
+} */
+@font-face {
+  font-family: 'Circular Std';
+  src: url('/fonts/CircularStd-Regular.woff2') format('woff2'),
+  url('/fonts/CircularStd-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Pro';
+  src: url('/fonts/CircularPro-Regular.woff2') format('woff2'),
+  url('/fonts/CircularPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Air Pro';
+    src: url('/fonts/CircularAirPro-Regular.woff2') format('woff2'),
+         url('/fonts/CircularAirPro-Regular.woff') format('woff');
+}
+
+.cs {
+  font-family: 'Circular Std';
 }

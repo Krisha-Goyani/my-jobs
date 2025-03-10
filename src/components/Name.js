@@ -26,6 +26,10 @@ const Name = () => {
         </span>
         {userData.location}
       </p>
+
+      <div className="relative -mx-9 h-12 my-5 bg-info-bg md:hidden flex items-center justify-center text-center w-full">
+        Info
+      </div>
     </div>
   );
 };
