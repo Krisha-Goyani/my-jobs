@@ -7,7 +7,7 @@ export default function Document() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#ffffff" />
         <meta charSet="utf-8" />
-        <link rel="apple-touch-icon" href="/logo192.png" />
+        <link rel="apple-touch-icon" href="/b2.png" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <body className="antialiased">
