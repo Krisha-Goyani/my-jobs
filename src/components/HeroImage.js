@@ -6,7 +6,7 @@ const HeroImage = () => {
       <div className="h-[81px]">
 
       <Image
-        src="/images/hero.png" 
+        src="/image/hero.png" 
         alt="Background"
         width={1310} // Set the width
         height={81} // Set the height
@@ -16,7 +16,7 @@ const HeroImage = () => {
       {/* Profile Image */}
       <div className="absolute xs:h-16 xs:w-16 md:h-32 md:w-32 md:top-[155px] xs:top-[49px] left-[28px] md:left-[30px] "> {/* Adjust position as needed */}
         <Image
-          src="/images/profile-img.PNG" // Replace with the actual path to your profile image
+          src="/image/profile-img.PNG" // Replace with the actual path to your profile image
           alt="Profile"
           width={130} // Set the width of the profile image
           height={130} // Set the height of the profile image
