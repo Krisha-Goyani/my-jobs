@@ -37,7 +37,8 @@ const PastWorks = () => {
                 <div key={index} className="w-[104px] h-[104px] rounded-xl overflow-hidden relative">
                   <Image
                     src={image.src}
-                    alt=""
+                    alt={`Past work ${index + 1}`}
+                    title={`Past work sample ${index + 1}`}
                     fill
                     className={`object-cover ${image.isBlurred ? 'blur-sm' : ''}`}
                     sizes="104px"

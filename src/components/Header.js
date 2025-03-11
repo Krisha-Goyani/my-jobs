@@ -15,6 +15,7 @@ const Header = () => {
             <Image
               src="/image/arrow-down.png"
               alt="down-arrow"
+              title="down-arrow"
               className="w-3 h-3"
               width={12}
               height={12}
@@ -24,6 +25,7 @@ const Header = () => {
             <Image
               src="/image/logo.png"
               alt="Flex Crew Logo"
+              title="Flex Crew"
               className="h-9 w-40 md:h-12 md:w-56"
               width={226}
               height={4}
@@ -33,8 +35,8 @@ const Header = () => {
             <Image
               className="w-6 h-6"
               src="/image/notification.png"
-              title="notification"
-              alt="notification"
+              title="Notifications"
+              alt="Notification bell icon"
               width={24}
               height={24}
             />
@@ -42,8 +44,8 @@ const Header = () => {
               <Image
                 className="w-6 h-6"
                 src="/image/profile.png"
-                title="profile"
-                alt="profile"
+                title="User Profile"
+                alt="Profile avatar"
                 width={24}
                 height={24}
               />
@@ -54,7 +56,8 @@ const Header = () => {
             <Image
               className="w-6 h-6"
               src="/image/menu.png"
-              alt="menu"
+              alt="Menu icon"
+              title="Navigation menu"
               width={24}
               height={24}
             />

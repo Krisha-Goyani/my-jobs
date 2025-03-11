@@ -82,11 +82,12 @@ const Footer = () => {
               onToggle={() => toggleSection('download')}
             >
               <div className="">
-                {footerData.downloadApp.stores.map(store => (
+                {footerData.downloadApp.stores.map((store) => (
                   <a key={store.id} href={store.href} className="block mb-6">
-                    <Image 
-                      src={store.image} 
-                      alt={store.name}
+                    <Image
+                      src={store.image}
+                      alt={`Download from ${store.name}`}
+                      title={`Get our app on ${store.name}`}
                       width={135}
                       height={40}
                       className="hover:opacity-90 border border-white rounded-lg h-10 w-32"
@@ -100,13 +101,14 @@ const Footer = () => {
           {/* Right Section */}
           <div className="md-lg:text-right text-left">
             <div className="flex md-lg:justify-end justify-start gap-4 md-lg:mb-10 mb-5">
-              {footerData.socialLinks.map(social => (
+              {footerData.socialLinks.map((social) => (
                 <a key={social.id} href={social.href} className="hover:opacity-80">
-                  <Image 
-                    src={social.icon} 
-                    alt={social.name}
-                    width={18}
-                    height={18}
+                  <Image
+                    src={social.icon}
+                    alt={`${social.name} icon`}
+                    title={`Follow us on ${social.name}`}
+                    width={24}
+                    height={24}
                     className='w-5 h-5' 
                   />
                 </a>
@@ -114,13 +116,14 @@ const Footer = () => {
             </div>
 
             <div className="flex md-lg:justify-end justify-start gap-2 mb-14">
-              {footerData.paymentMethods.map(method => (
-                <Image 
+              {footerData.paymentMethods.map((method) => (
+                <Image
                   key={method.id}
-                  src={method.image} 
-                  alt={method.name}
-                  width={40}
-                  height={25}
+                  src={method.image}
+                  alt={`Pay with ${method.name}`}
+                  title={`${method.name} accepted`}
+                  width={32}
+                  height={20}
                   className= 'w-14 h-9 border border-white rounded-md'
                 />
               ))}
@@ -137,6 +140,7 @@ const Footer = () => {
                   <Image 
                     src="/image/whatsapp.png" 
                     alt="WhatsApp"
+                    title='WhatsApp'
                     width={20}
                     height={20}
                     className='w-4 h-4' 
@@ -165,7 +169,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mb-6 mt-7 md-lg:hidden">
-          <div ><Image className='w-[992px]' src="/image/line.png" alt="footer-image" width={300} height={300} /></div>
+          <div ><Image className='w-[992px]' src="/image/line.png" alt="footer-image" title='footer-image' width={300} height={300} /></div>
               <h3 className="text-xl font-bold mb-1 mt-7">{footerData.contact.title}</h3>
               <p className="text-lg font-normal text-text-gray-light mb-7">{footerData.contact.description}</p>
               <div className="flex md-lg:justify-end justify-start gap-4">
@@ -176,6 +180,7 @@ const Footer = () => {
                   <Image 
                     src="/image/whatsapp.png" 
                     alt="WhatsApp"
+                    title='WhatsApp'
                     width={20}
                     height={20}
                     className='w-4 h-4' 

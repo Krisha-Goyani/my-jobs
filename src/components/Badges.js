@@ -14,7 +14,8 @@ const Badges = () => {
           <div key={badge.id} className="relative">
             <Image
               src={`/image/${badge.type}.png`}
-              alt={badge.type}
+              alt={`${badge.type} verification badge`}
+              title={`${badge.type} verification status`}
               width={38}
               height={38}
               className="border-0 rounded-full w-9 h-9"

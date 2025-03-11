@@ -8,6 +8,7 @@ const HeroImage = () => {
       <Image
         src="/image/hero.png" 
         alt="Background"
+        title="Our service professional"
         width={1310} // Set the width
         height={81} // Set the height
         className="rounded-lg md:rounded-3xl object-cover h-[81px] md:h-[216px]" // Adjusted height classes
@@ -18,6 +19,7 @@ const HeroImage = () => {
         <Image
           src="/image/profile-img.PNG" // Replace with the actual path to your profile image
           alt="Profile"
+          title="profile"
           width={130} // Set the width of the profile image
           height={130} // Set the height of the profile image
           className="rounded-full md:h-32 md:w-32 h-16 w-16" // Optional: styling for the profile image

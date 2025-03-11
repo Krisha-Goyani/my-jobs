@@ -15,6 +15,7 @@ const AdditionalInfo = () => {
               <Image
                 src={info.icon}
                 alt={info.title}
+                title={info.title}
                 width={24}
                 height={24}
                 className="w-16 h-16"

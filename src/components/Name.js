@@ -10,7 +10,7 @@ const Name = () => {
         {userData.name}
       </h1>
       <p className="font-circular-std flex items-center gap-2 xs:text-sm mt-3 md:text-lg text-text-gray font-medium">
-        <Image className="h-3 w-3" src="/image/star.png" alt="star" width={13} height={13} />{" "}
+        <Image className="h-3 w-3" src="/image/star.png" alt="star" title="star" width={13} height={13} />{" "}
         {userData.rating} • {userData.reviews} Reviews 
         <span className="hidden md:inline">• {userData.experience}</span>
       </p>
@@ -20,6 +20,7 @@ const Name = () => {
           <Image
             src="/image/location.png"
             alt="location"
+            title="location"
             width={28}
             height={28}
             className='w-7 h-7 rounded-full'
