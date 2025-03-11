@@ -49,7 +49,7 @@ const RatingsAndReviews = () => {
               <span className="text-3xl font-medium">4.0</span>
               <span className="text-yellow-400 text-2xl ml-1">
                 <Image
-                  src={"/images/star.png"}
+                  src={"/image/star.png"}
                   alt="star"
                   className="w-5 h-5"
                   width={20}
@@ -141,7 +141,7 @@ const RatingsAndReviews = () => {
                   <button className="text-gray-400 flex items-center gap-1">
                     <span>
                       <Image
-                        src={"/images/like.png"}
+                        src={"/image/like.png"}
                         alt="like"
                         width={20}
                         height={20}
@@ -154,7 +154,7 @@ const RatingsAndReviews = () => {
                   <button className="text-gray-400 flex items-center gap-1">
                     <span>
                       <Image
-                        src={"/images/dislike.png"}
+                        src={"/image/dislike.png"}
                         alt="like"
                         width={20}
                         height={20}

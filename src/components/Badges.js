@@ -13,7 +13,7 @@ const Badges = () => {
         {userData.badges.map((badge) => (
           <div key={badge.id} className="relative">
             <Image
-              src={`/images/${badge.type}.png`}
+              src={`/image/${badge.type}.png`}
               alt={badge.type}
               width={38}
               height={38}

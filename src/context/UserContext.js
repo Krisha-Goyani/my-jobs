@@ -19,22 +19,22 @@ export const UserProvider = ({ children }) => {
             { id: 3, type: 'id', status: 'active' }
         ],
         tradeCertificates: [
-            { id: 1, image: '/images/c1.png', alt: 'Certificate 1' },
-            { id: 2, image: '/images/c2.png', alt: 'Certificate 2' },
-            { id: 3, image: '/images/c3.png', alt: 'Certificate 3' },
-            { id: 4, image: '/images/c4.png', alt: 'Certificate 4' },
+            { id: 1, image: '/image/c1.png', alt: 'Certificate 1' },
+            { id: 2, image: '/image/c2.png', alt: 'Certificate 2' },
+            { id: 3, image: '/image/c3.png', alt: 'Certificate 3' },
+            { id: 4, image: '/image/c4.png', alt: 'Certificate 4' },
         ],
         additionalInfo: [
             {
                 id: 1,
-                icon: '/images/additional-certi1.png',
+                icon: '/image/additional-certi1.png',
                 title: "Worker's Compensation Document",
                 status: 'Valid upto 24/09/2654',
                 action: 'View'
             },
             {
                 id: 2,
-                icon: '/images/additional-certi2.png',
+                icon: '/image/additional-certi2.png',
                 title: 'General Liability Insurance',
                 status: 'Not available',
                 action: null

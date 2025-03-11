@@ -135,7 +135,7 @@ const Footer = () => {
                 </button>
                 <button className="xs:w-44 xs:h-11 md-lg:w-52 md-lg:h-14  border border-border-red text-sm font-medium text-white md-lg:px-8 md-lg:py-2 px-4 py-2 rounded-full hover:bg-red-600/10 flex items-center gap-2">
                   <Image 
-                    src="/images/whatsapp.png" 
+                    src="/image/whatsapp.png" 
                     alt="WhatsApp"
                     width={20}
                     height={20}
@@ -165,7 +165,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mb-6 mt-7 md-lg:hidden">
-          <div ><Image className='w-[992px]' src="/images/line.png" alt="footer-image" width={300} height={300} /></div>
+          <div ><Image className='w-[992px]' src="/image/line.png" alt="footer-image" width={300} height={300} /></div>
               <h3 className="text-xl font-bold mb-1 mt-7">{footerData.contact.title}</h3>
               <p className="text-lg font-normal text-text-gray-light mb-7">{footerData.contact.description}</p>
               <div className="flex md-lg:justify-end justify-start gap-4">
@@ -174,7 +174,7 @@ const Footer = () => {
                 </button>
                 <button className="xs:w-44 xs:h-11 md-lg:w-52 md-lg:h-14  border border-border-red text-sm font-medium text-white md-lg:px-8 md-lg:py-2 px-4 py-2 rounded-full hover:bg-red-600/10 flex items-center gap-2">
                   <Image 
-                    src="/images/whatsapp.png" 
+                    src="/image/whatsapp.png" 
                     alt="WhatsApp"
                     width={20}
                     height={20}

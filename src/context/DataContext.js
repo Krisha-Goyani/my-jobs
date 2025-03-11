@@ -11,9 +11,9 @@ export const DataProvider = ({ children }) => {
       date: "03/12/2020",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       images: [
-        { src: "/images/b1.png", isBlurred: false },
-        { src: "/images/b2.png", isBlurred: false },
-        { src: "/images/b3.png", isBlurred: true }
+        { src: "/image/b1.png", isBlurred: false },
+        { src: "/image/b2.png", isBlurred: false },
+        { src: "/image/b3.png", isBlurred: true }
       ]
     },
     {
@@ -23,8 +23,8 @@ export const DataProvider = ({ children }) => {
       date: "02/27/2020",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       images: [
-        { src: "/images/h1.png", isBlurred: false },
-        { src: "/images/b1.png", isBlurred: false }
+        { src: "/image/h1.png", isBlurred: false },
+        { src: "/image/b1.png", isBlurred: false }
       ]
     },
     {
@@ -34,8 +34,8 @@ export const DataProvider = ({ children }) => {
       date: "02/27/2020",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       images: [
-        { src: "/images/h1.png", isBlurred: false },
-        { src: "/images/b1.png", isBlurred: false }
+        { src: "/image/h1.png", isBlurred: false },
+        { src: "/image/b1.png", isBlurred: false }
       ]
     }
   ];
@@ -125,20 +125,20 @@ export const DataProvider = ({ children }) => {
     downloadApp: {
       title: "DOWNLOAD APP",
       stores: [
-        { id: 1, name: "App Store", image: "/images/appStore.png", href: "#" },
-        { id: 2, name: "Google Play", image: "/images/playStore.png", href: "#" },
+        { id: 1, name: "App Store", image: "/image/appStore.png", href: "#" },
+        { id: 2, name: "Google Play", image: "/image/playStore.png", href: "#" },
       ]
     },
     socialLinks: [
-      { id: 1, name: "Instagram", icon: "/images/instagram.png", href: "#" },
-      { id: 2, name: "LinkedIn", icon: "/images/linkedin.png", href: "#" },
+      { id: 1, name: "Instagram", icon: "/image/instagram.png", href: "#" },
+      { id: 2, name: "LinkedIn", icon: "/image/linkedin.png", href: "#" },
     ],
     paymentMethods: [
-      { id: 1, name: "Mastercard", image: "/images/mastercard.png" },
-      { id: 2, name: "PayPal", image: "/images/payPal.png" },
-      { id: 3, name: "American Express", image: "/images/amex.png" },
-      { id: 4, name: "Apple Pay", image: "/images/applePay.png" },
-      { id: 5, name: "Google Pay", image: "/images/pay.png" },
+      { id: 1, name: "Mastercard", image: "/image/mastercard.png" },
+      { id: 2, name: "PayPal", image: "/image/payPal.png" },
+      { id: 3, name: "American Express", image: "/image/amex.png" },
+      { id: 4, name: "Apple Pay", image: "/image/applePay.png" },
+      { id: 5, name: "Google Pay", image: "/image/pay.png" },
     ],
     contact: {
       title: "Get in touch",
