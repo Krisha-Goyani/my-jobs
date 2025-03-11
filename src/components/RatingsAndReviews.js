@@ -65,6 +65,7 @@ const RatingsAndReviews = () => {
               <span className="text-2xl ml-1">
                 <Image
                   src={"/image/star.png"}
+                  title="Star"
                   alt="star"
                   className="w-5 h-5"
                   width={20}
@@ -168,6 +169,7 @@ const RatingsAndReviews = () => {
                         alt="like"
                         width={20}
                         height={20}
+                        title="Like"
                       />
                     </span>
                     <span className="text-base text-text-gray-light font-normal">
@@ -181,6 +183,7 @@ const RatingsAndReviews = () => {
                         alt="like"
                         width={20}
                         height={20}
+                        title="Dislike"
                       />
                     </span>
                     <span className="text-base text-text-gray-light font-normal">
