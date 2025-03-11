@@ -13,6 +13,16 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="/Image/logo.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Flex Crew Logo" />
+        <meta property="og:image:type" content="image/png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="/Image/logo.png" />
+        <meta name="twitter:image:alt" content="Flex Crew Logo" />
       </Head>
       <NextSeo
         title="Flex Crew - Professional At-Home Services"
