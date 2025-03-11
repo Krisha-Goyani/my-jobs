@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useData } from '../context/DataContext';
 import StyledHeading from './StyledHeading';
+import Image from 'next/image';
 
 const PastWorks = () => {
   const { pastWorks } = useData();
@@ -31,19 +32,14 @@ const PastWorks = () => {
             <p className="my-5 ml-5 font-normal text-text-black-primary">{work.description}</p>
             <div className="flex gap-2 mt-3 ml-5">
               {work.images.map((image, index) => (
-                <div key={index} className="w-[104px] h-[104px] rounded-xl overflow-hidden">
-                  {image.includes('.mp4') ? (
-                    <div className="relative">
-                      <img src={image} alt="" className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                          <div className="w-0 h-0 border-l-8 border-t-6 border-b-6 border-l-gray-800 border-t-transparent border-b-transparent ml-1" />
-                        </div>
-                      </div>
-                    </div>
-                  ) : (
-                    <img src={image} alt="" className="w-full h-full object-cover" />
-                  )}
+                <div key={index} className="w-[104px] h-[104px] rounded-xl overflow-hidden relative">
+                  <Image
+                    src={image.src}
+                    alt=""
+                    fill
+                    className={`object-cover ${image.isBlurred ? 'blur-sm' : ''}`}
+                    sizes="104px"
+                  />
                 </div>
               ))}
             </div>

@@ -21,13 +21,13 @@ const HomePage = () => {
   };
 
   return (
-    <div className="text-black bg-sky-200 w-full">
+    <div className="text-black  w-full">
       <Header />
       <div className="container mx-auto">
-        <div className="md:px-16 xs:px-4 bg-container-bg">
+        <div className="lg:px-16 xs:px-4 ">
           <HeroImage />
           <div className="lg:flex justify-between max-w-[1310px] w-full">
-            <div className="relative md:pl-9 md:pr-16 xs:pt-5 md:pt-2 max-w-[856x] w-full">
+            <div className="relative lg:pl-9 lg:pr-16 xs:pt-5 md:pt-2 max-w-[856x] w-full">
               <Name />
               <div className="md:hidden">
                 <PriceTable />
@@ -59,7 +59,7 @@ const HomePage = () => {
                   <div className="absolute bottom-1/2 translate-y-1/2 left-0 right-0 z-20 px-4 ">
                     <button
                       onClick={toggleMobileView}
-                      className="w-72 h-14 px-11 py-3 max-w-md mx-auto bg-black text-white py-3 px-4 rounded-full text-base font-medium block"
+                      className="w-72 h-14 px-11 py-3 max-w-md mx-auto bg-black text-white py-3 px-4 rounded-full text-base font-circular-std font-medium block"
                     >
                       VIEW MORE
                     </button>
@@ -87,7 +87,7 @@ const HomePage = () => {
             </div>
 
             {/* Right sidebar content with responsive layout */}
-            <div className="lg:max-w-[434px] md:w-full md:pl-9 lg:pl-0 xs:hidden md:block w-full">
+            <div className="lg:max-w-[434px] md:w-full  lg:pl-0 xs:hidden md:block w-full">
               {/* PriceTable and Badges row */}
               <div className="md:flex md:gap-4 lg:block">
                 <div className="md:w-[434px] lg:mb-10 lg:w-full md:block hidden">

@@ -20,7 +20,7 @@ const HeroImage = () => {
           alt="Profile"
           width={130} // Set the width of the profile image
           height={130} // Set the height of the profile image
-          className="rounded-full" // Optional: styling for the profile image
+          className="rounded-full md:h-32 md:w-32 h-16 w-16" // Optional: styling for the profile image
         />
       </div>
     </div>

@@ -22,7 +22,7 @@ const PriceTable = () => {
         </thead>
         <tbody>
           {prices.map((item, index) => (
-            <tr key={index} className={`py-2 px-8 font-circular-std ${index === prices.length - 1 ? '' : 'border-b border-border-secondary'}`}>
+            <tr key={index} className={`py-2 md:px-8 px-3 font-circular-std ${index === prices.length - 1 ? '' : 'border-b border-border-secondary'}`}>
               <td className="py-2 pl-8 text-left">
                 {item.service} <br />
                 <small className="text-text-gray">

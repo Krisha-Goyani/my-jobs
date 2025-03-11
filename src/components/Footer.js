@@ -107,6 +107,7 @@ const Footer = () => {
                     alt={social.name}
                     width={18}
                     height={18}
+                    className='w-5 h-5' 
                   />
                 </a>
               ))}
@@ -138,6 +139,7 @@ const Footer = () => {
                     alt="WhatsApp"
                     width={20}
                     height={20}
+                    className='w-4 h-4' 
                   />
                   {footerData.contact.phone}
                 </button>
@@ -176,6 +178,7 @@ const Footer = () => {
                     alt="WhatsApp"
                     width={20}
                     height={20}
+                    className='w-4 h-4' 
                   />
                   {footerData.contact.phone}
                 </button>

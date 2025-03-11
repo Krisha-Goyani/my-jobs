@@ -10,7 +10,11 @@ export const DataProvider = ({ children }) => {
       name: "Jacob Simmons",
       date: "03/12/2020",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      images: ["/images/b1.png", "/images/b2.png", "/images/b3.png"]
+      images: [
+        { src: "/images/b1.png", isBlurred: false },
+        { src: "/images/b2.png", isBlurred: false },
+        { src: "/images/b3.png", isBlurred: true }
+      ]
     },
     {
       id: 2,
@@ -18,7 +22,10 @@ export const DataProvider = ({ children }) => {
       name: "Tom Hardy",
       date: "02/27/2020",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      images: ["/images/h1.png", "/images/b1.png"]
+      images: [
+        { src: "/images/h1.png", isBlurred: false },
+        { src: "/images/b1.png", isBlurred: false }
+      ]
     },
     {
       id: 3,
@@ -26,7 +33,10 @@ export const DataProvider = ({ children }) => {
       name: "Tom Hardy",
       date: "02/27/2020",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      images: ["/images/h1.png", "/images/b1.png"]
+      images: [
+        { src: "/images/h1.png", isBlurred: false },
+        { src: "/images/b1.png", isBlurred: false }
+      ]
     }
   ];
 
