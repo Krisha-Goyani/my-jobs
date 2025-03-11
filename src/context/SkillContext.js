@@ -14,14 +14,14 @@ export const SkillProvider = ({ children }) => {
     },
     {
       category: "General > Brickalyer",
-      description: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finis...",
-      fullDescription: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying",
+      description: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, CuttingCommunication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills.",
+      fullDescription: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, CuttingCommunication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills.",
       expanded: false
     },
     {
       category: "General > Brickalyer",
-      description: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, CuttingCommunication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills.",
-      fullDescription: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, CuttingCommunication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills.",
+      description: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finis...",
+      fullDescription: "Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying, Communication Skills, Cutting, Communication Skills, Cutting, Finishing, Knowledge of Materials, Laying",
       expanded: false
     },
     {

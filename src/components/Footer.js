@@ -37,6 +37,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-5">
       <div className="container mx-auto md-lg:px-16 px-4">
+        {/* Main Footer Content */}
         <div className="md-lg:flex md-lg:justify-between max-w-[1310px] w-full">
           {/* Left Section */}
           <div className="md-lg:flex md-lg:gap-20 md-lg:mb-0 mb-8">
@@ -98,7 +99,7 @@ const Footer = () => {
 
           {/* Right Section */}
           <div className="md-lg:text-right text-left">
-            <div className="flex md-lg:justify-end justify-start gap-4 mb-10">
+            <div className="flex md-lg:justify-end justify-start gap-4 md-lg:mb-10 mb-5">
               {footerData.socialLinks.map(social => (
                 <a key={social.id} href={social.href} className="hover:opacity-80">
                   <Image 
@@ -124,7 +125,7 @@ const Footer = () => {
               ))}
             </div>
 
-            <div className="mb-6">
+            <div className="mb-6 xs:hidden md-lg:block">
               <h3 className="text-xl font-bold mb-1">{footerData.contact.title}</h3>
               <p className="text-lg font-normal text-text-gray-light mb-7">{footerData.contact.description}</p>
               <div className="flex md-lg:justify-end justify-start gap-4">
@@ -150,23 +151,43 @@ const Footer = () => {
           <div className="md-lg:flex md-lg:justify-between items-start">
           <div className=''>
             <h3 className="text-xl font-bold mb-4 md-lg:mb-5">Sign up to our newsletter</h3>
-            <div className="flex gap-4 max-w-[470px] md-lg:w-[685px]">
+            <div className="flex gap-4 xs:max-w-[470px] md-lg:max-w-[695px]">
               <input
                 type="email"
                 placeholder="enter your email address"
-                className="xs:w-48 sm:w-60 xs:h-11 bg-transparent text-lg font-medium text-text-gray-light border border-border-red rounded-full px-6 py-2 flex-1 md-lg:w-[470px] md-lg:h-14"
+                className="xs:w-48 sm:w-60 md-l xs:h-11 bg-transparent text-lg font-medium text-text-gray-light border border-border-red rounded-full px-6 py-2 flex-1 md-lg:w-[470px] md-lg:h-14"
               />
                 <button className="xs:w-24 xs:h-11 md-lg:w-52 md-lg:h-14 bg-text-red text-lg font-medium text-white md-lg:px-6 md-lg:py-2 px-4 py-2 rounded-full hover:bg-red-600">
                 Sign up
               </button>
             </div>
           </div>
+          <div className="mb-6 mt-7 md-lg:hidden">
+          <div ><Image className='w-[992px]' src="/images/line.png" alt="footer-image" width={300} height={300} /></div>
+              <h3 className="text-xl font-bold mb-1 mt-7">{footerData.contact.title}</h3>
+              <p className="text-lg font-normal text-text-gray-light mb-7">{footerData.contact.description}</p>
+              <div className="flex md-lg:justify-end justify-start gap-4">
+                <button className="xs:w-36 xs:h-11 md-lg:w-52 md-lg:h-14 bg-text-red text-lg font-medium text-white md-lg:px-6 md-lg:py-2 px-4 py-2 rounded-full hover:bg-red-700">
+                  Contact us
+                </button>
+                <button className="xs:w-44 xs:h-11 md-lg:w-52 md-lg:h-14  border border-border-red text-sm font-medium text-white md-lg:px-8 md-lg:py-2 px-4 py-2 rounded-full hover:bg-red-600/10 flex items-center gap-2">
+                  <Image 
+                    src="/images/whatsapp.png" 
+                    alt="WhatsApp"
+                    width={20}
+                    height={20}
+                  />
+                  {footerData.contact.phone}
+                </button>
+              </div>
+            </div>
              {/* Copyright */}
         <div className="font-circular-std font-normal xs:mt-8 xs:text-center md-lg:text-end md-lg:self-end text-sm md-lg:text-gray-400">
           {footerData.copyright}
           </div>
         </div>
         </div>
+        
 
         
       </div>

@@ -2,19 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/* Google Fonts Import - Updated for maximum boldness */
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap'); */
 
 /* Custom Font Faces */
 @layer base {
-  @font-face {
-    font-family: "Oswald", sans-serif;
-    src: url('/fonts/oswald.bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-
+  /* Remove the local @font-face for Oswald since we're using Google Fonts */
   @font-face {
     font-family: 'Circular Std';
     src: url('/font/Circular Std Font.ttf') format('truetype');
@@ -41,7 +34,13 @@
     font-display: swap;
   }
 }
-
+@font-face {
+  font-family: oswald;
+  src: url('/fonts/Oswald-Regular.ttf');
+}
+.oswald{
+  font-family: oswald;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -118,4 +117,28 @@ a {
 
 .cs {
   font-family: 'Circular Std';
+}
+
+/* Updated Oswald styling to match the image exactly */
+/* .font-oswald { */
+  /* font-family: 'Oswald', sans-serif; */
+  /* font-weight: 700; Maximum boldness */
+  /* letter-spacing: -0.02em; Slightly tighter letter spacing */
+  /* line-height: 1.1; Tighter line height */
+  /* text-transform: none; Remove uppercase transform as the image shows regular case */
+/* } */
+
+@font-face {
+  font-family: 'Oswalds';
+  src: url('/public/font/oswalds.ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.oswald {
+  font-family: 'Oswalds';
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }

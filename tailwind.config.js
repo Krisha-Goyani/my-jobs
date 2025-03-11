@@ -21,7 +21,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'oswald': ['Oswald', 'sans-serif'],
+        // 'oswald': ['Oswald'],
         'circular-std': ['Circular Std', 'sans-serif'],
         'circular-pro': ['Circular Pro', 'sans-serif'],
         'circular-air-pro': ['Circular Air Pro', 'sans-serif'],

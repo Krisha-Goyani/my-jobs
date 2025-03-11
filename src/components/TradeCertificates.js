@@ -9,7 +9,8 @@ const TradeCertificates = () => {
   return (
     <div className="mb-10">
       <StyledHeading>Trade Certifications</StyledHeading>
-      <div className="grid grid-cols-3 gap-2  mt-4">
+      <div className="grid xs:grid-cols-3 xs:max-w-[280px] xs:gap-2 
+                          md:max-w-[434px] md:grid-cols-3 md:gap-2 mt-4">
         {userData.tradeCertificates.map((cert) => (
           <div key={cert.id} className="">
             <Image
@@ -17,7 +18,7 @@ const TradeCertificates = () => {
               alt={cert.alt}
               width={140}
               height={140}
-              className=" h-36 w-36 border-1 border-border-gray rounded-xl"
+              className=" lg:h-36 lg:w-36 h-24 w-24 border-1 border-border-gray rounded-xl"
             />
           </div>
         ))}

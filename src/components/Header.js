@@ -38,7 +38,7 @@ const Header = () => {
               width={24}
               height={24}
             />
-            <div className="flex gap-1">
+            <div className="flex items-center gap-1">
               <Image
                 className="w-6 h-6"
                 src="/images/profile.png"
