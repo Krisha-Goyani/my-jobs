@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="/Image/logo.png" />
+        <meta property="og:image" content="https://my-jobs1.netlify.app/Image/logo.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Flex Crew Logo" />
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/Image/logo.png" />
+        <meta name="twitter:image" content="https://my-jobs1.netlify.app/Image/b1.png" />
         <meta name="twitter:image:alt" content="Flex Crew Logo" />
       </Head>
       <NextSeo
