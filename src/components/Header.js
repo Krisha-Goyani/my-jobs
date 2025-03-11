@@ -13,7 +13,7 @@ const Header = () => {
           <span className="font-circular-std pt-3 text-sm md:flex items-center gap-2 xs:hidden md:block">
             English{" "}
             <Image
-              src="/images/arrow-down.png"
+              src="/image/arrow-down.png"
               alt="down-arrow"
               className="w-3 h-3"
               width={12}
@@ -22,7 +22,7 @@ const Header = () => {
           </span>
           <div>
             <Image
-              src="/images/logo.png"
+              src="/image/logo.png"
               alt="Flex Crew Logo"
               className="h-9 w-40 md:h-12 md:w-56"
               width={226}
@@ -32,7 +32,7 @@ const Header = () => {
           <div className="pt-3 md:flex gap-11 xs:hidden md:block">
             <Image
               className="w-6 h-6"
-              src="/images/notification.png"
+              src="/image/notification.png"
               title="notification"
               alt="notification"
               width={24}
@@ -41,7 +41,7 @@ const Header = () => {
             <div className="flex items-center gap-1">
               <Image
                 className="w-6 h-6"
-                src="/images/profile.png"
+                src="/image/profile.png"
                 title="profile"
                 alt="profile"
                 width={24}
@@ -53,7 +53,7 @@ const Header = () => {
           <div className="sm:block md:hidden">
             <Image
               className="w-6 h-6"
-              src="/images/menu.png"
+              src="/image/menu.png"
               alt="menu"
               width={24}
               height={24}
