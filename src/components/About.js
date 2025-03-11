@@ -43,7 +43,7 @@ const About = () => {
                 {showButton && (
                     <button 
                         onClick={toggleExpand}
-                        className="text-text-red hover:text-red-700 text-sm mt-1 font-medium"
+                        className="text-text-red font-circular-std hover:text-red-700 text-sm mt-1 font-medium"
                     >
                         {isExpanded ? 'View less' : 'View more'}
                     </button>

@@ -7,7 +7,7 @@ const Header = () => {
   const { navItems } = useNavItems(); // Get navigation items from context
 
   return (
-    <header className="sticky top-0 z-[999] w-full shadow">
+    <header className="fixed top-0 left-0 right-0 z-[999] bg-white shadow">
       <div className="container mx-auto md:h-36 flex flex-col justify-between items-center">
         <div className="flex xs:px-4 md:px-16 xs:py-5 md:pt-7 justify-between items-center w-full">
           <span className="font-circular-std pt-3 text-sm md:flex items-center gap-2 xs:hidden md:block">

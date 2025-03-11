@@ -39,15 +39,30 @@ const RatingsAndReviews = () => {
     }
   };
 
+  const getStarColor = (stars) => {
+    switch (stars) {
+      case 5:
+      case 4:
+      case 3:
+        return "text-bg-green";
+      case 2:
+        return "text-bg-orange";
+      case 1:
+        return "text-bg-red";
+      default:
+        return "text-gray-400";
+    }
+  };
+
   return (
     <div className="mt-8 font-circular-std">
       <StyledHeading>Ratings & Reviews</StyledHeading>
       <div className="mt-4">
-        <div className="flex gap-7 max-h-[100px] max-w-[419px] w-full h-full">
+        <div className="flex md:gap-7 max-h-[100px] xs:max-w-[678px] md:max-w-[419px] w-full h-full">
           <div className="flex flex-col w-28 self-center">
-            <div className="flex items-baseline">
-              <span className="text-3xl font-medium">4.0</span>
-              <span className="text-yellow-400 text-2xl ml-1">
+            <div className="flex items-center">
+              <span className="text-xl md:text-3xl font-medium">4.0</span>
+              <span className="text-2xl ml-1">
                 <Image
                   src={"/image/star.png"}
                   alt="star"
@@ -66,8 +81,15 @@ const RatingsAndReviews = () => {
           <div className="w-64 flex flex-col gap-2">
             {reviews.summary.distribution.map((item) => (
               <div key={item.stars} className="flex items-center gap-2 h-4">
-                <span className="w-8 text-sm text-gray-600">{item.stars}★</span>
-                <div className="w-[177px] h-1.5 bg-gray-200 rounded-full overflow-hidden relative">
+                <div
+                  className={`flex items-center gap-1 w-8 text-sm ${getStarColor(
+                    item.stars
+                  )}`}
+                >
+                  <span>{item.stars}</span>
+                  <span>★</span>
+                </div>
+                <div className="w-[137px] md:w-[177px] h-1.5 bg-gray-200 rounded-full overflow-hidden relative">
                   <div
                     className={`h-full ${getRatingColor(
                       item.stars
@@ -109,11 +131,12 @@ const RatingsAndReviews = () => {
             >
               <div className="flex items-center gap-2 mb-2">
                 <span
-                  className={`px-2 py-0.5 text-white text-sm rounded ${getRatingColor(
+                  className={`flex items-center gap-[2px] px-2 py-0.5 text-white text-sm rounded ${getRatingColor(
                     review.rating
                   )}`}
                 >
-                  {review.rating}★
+                  <span>{review.rating}</span>
+                  <span>★</span>
                 </span>
                 <span className="font-bold text-lg">{review.category}</span>
               </div>
@@ -127,7 +150,7 @@ const RatingsAndReviews = () => {
                 {review.text.length > 150 && (
                   <button
                     onClick={() => toggleReviewExpansion(review.id)}
-                    className="text-red-500 text-sm mt-1 ml-1"
+                    className="text-text-red font-circular-std text-sm mt-1 ml-1"
                   >
                     {expandedReviews[review.id] ? "See less" : "See more"}
                   </button>

@@ -7,7 +7,7 @@ const AdditionalInfo = () => {
   const { userData } = useContext(UserContext);
 
   return (
-    <div className="mb-8">
+    <div className="mb-8 xs:mt-5 md:mt-0">
       <StyledHeading>Additional Info</StyledHeading>
       <div className="space-y-4 mt-5">
         {userData.additionalInfo.map((info) => (

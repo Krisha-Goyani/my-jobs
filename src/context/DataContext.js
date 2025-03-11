@@ -46,7 +46,7 @@ export const DataProvider = ({ children }) => {
       totalRatings: 3197,
       totalReviews: 2060,
       distribution: [
-        { stars: 5, count: 2193 },
+        { stars: 5 , count: 2193 },
         { stars: 4, count: 701 },
         { stars: 3, count: 189 },
         { stars: 2, count: 76 },

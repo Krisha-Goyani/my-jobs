@@ -18,19 +18,21 @@ const PastWorks = () => {
     <div className="mt-10">
       <StyledHeading>Past Works</StyledHeading>
       <div className="mt-4 relative">
-        {/* Red timeline line - Extended to reach the View more button */}
-        <div className="absolute left-[5px] top-2 bottom-[14px] w-[2px] bg-text-red" />
+        {/* Red timeline line - Behind the dots */}
+        <div className="absolute left-2.5 top-2 bottom-[14px] w-[2px] bg-text-red" />
         
         {visibleWorks.map((work) => (
           <div key={work.id} className="pb-7 relative font-circular-std">
             <div className="flex items-center gap-2">
-              {/* Red dot with white border */}
-              <div className="w-3 h-3 rounded-full bg-text-red ring-2 ring-white relative z-10" />
+              {/* Outer ring with inner dot and white background */}
+              <div className="w-5 h-5 rounded-full border-2 border-text-red bg-white relative z-10 flex items-center justify-center">
+                <div className="w-2 h-2 rounded-full bg-text-red" />
+              </div>
               <h3 className="font-medium">{work.title}</h3>
             </div>
-            <p className="text-text-gray font-normal text-sm ml-5">{work.name}, {work.date}</p>
-            <p className="my-5 ml-5 font-normal text-text-black-primary">{work.description}</p>
-            <div className="flex gap-2 mt-3 ml-5">
+            <p className="text-text-gray font-normal text-sm ml-7">{work.name}, {work.date}</p>
+            <p className="my-5 ml-7 font-normal text-text-black-primary">{work.description}</p>
+            <div className="flex gap-2 mt-3 ml-7">
               {work.images.map((image, index) => (
                 <div key={index} className="w-[104px] h-[104px] rounded-xl overflow-hidden relative">
                   <Image
@@ -49,10 +51,12 @@ const PastWorks = () => {
         {/* View more/less button with red dot */}
         {pastWorks.length > 2 && (
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-text-red ring-2 ring-white relative z-10" />
+            <div className="w-5 h-5 rounded-full border-2 border-text-red bg-white relative z-10 flex items-center justify-center">
+              <div className="w-2 h-2 rounded-full bg-text-red" />
+            </div>
             <button 
               onClick={toggleExpand}
-              className="text-text-red hover:text-red-700 font-medium transition-colors"
+              className="text-text-red font-circular-std hover:text-red-700 font-medium transition-colors"
             >
               {isExpanded ? 'View less' : 'View more'}
             </button>

@@ -6,12 +6,12 @@ const FooterSection = ({ title, children, isOpen, onToggle }) => {
   return (
     <div className="md-lg:mb-0 mb-4">
       <button 
-        className="md-lg:hidden w-full flex gap-3 items-center text-red-600 font-medium mb-4"
+        className="md-lg:hidden w-full flex gap-3 font-circular-std font-bold items-center text-text-red  mb-4"
         onClick={onToggle}
       >
         {title} <span>{isOpen ? '▲' : '▼'}</span>
       </button>
-      <h3 className="hidden md-lg:block flex gap-6 text-text-red-secondary text-xl font-bold mb-6">{title}</h3>
+      <h3 className="hidden md-lg:block flex gap-6 text-text-red font-circular-std text-xl font-bold mb-6">{title}</h3>
       <div className={`${isOpen ? 'hidden md-lg:block' : 'block'}`}>
         {children}
       </div>
@@ -36,7 +36,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-black text-white py-5">
-      <div className="container mx-auto md-lg:px-16 px-4">
+      <div className="container font-circular-std mx-auto md-lg:px-16 px-4">
         {/* Main Footer Content */}
         <div className="md-lg:flex md-lg:justify-between max-w-[1310px] w-full">
           {/* Left Section */}

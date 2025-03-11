@@ -26,7 +26,7 @@ const Skill = () => {
             <StyledHeading>Skills</StyledHeading>
             <div className="mt-4 flex flex-col gap-3 max-w-[776px] w-full">
                 {visibleSkills.map((skill, index) => (
-                    <div key={index} className="bg-[#F8F9FC] rounded-lg px-5 py-3">
+                    <div key={index} className="bg-[#F8F9FC] rounded-lg md:px-5 px-3 py-3">
                         <h3 className="text-sm text-[#1A1C1E] font-medium font-circular-std">
                             {skill.category}
                         </h3>
@@ -39,7 +39,7 @@ const Skill = () => {
                             }
                             {skill.fullDescription.length > 150 && (
                                 <button 
-                                    className="text-[#E31B54] ml-1 hover:underline cursor-pointer inline-block"
+                                    className="text-text-red font-circular-std ml-1 hover:underline cursor-pointer inline-block"
                                     onClick={() => toggleSkillExpansion(index)}
                                 >
                                     {expandedSkills[index] ? 'See less' : 'See more'}

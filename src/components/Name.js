@@ -28,9 +28,9 @@ const Name = () => {
         {userData.location}
       </p>
 
-      <div className="relative -mx-9 h-12 my-5 font-circular-std text-base font-bold bg-info-bg md:hidden flex items-center justify-center text-center ">
+      {/* <div className="relative -mx-9 h-12 my-5 font-circular-std text-base font-bold bg-info-bg md:hidden flex items-center justify-center text-center ">
         Info
-      </div>
+      </div> */}
     </div>
   );
 };

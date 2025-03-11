@@ -14,92 +14,97 @@ import RatingsAndReviews from "../components/RatingsAndReviews";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
-  const [isMobileExpanded, setIsMobileExpanded] = useState(false);
+  const [activeTab, setActiveTab] = useState('info'); // 'info', 'price', 'reviews'
 
-  const toggleMobileView = () => {
-    setIsMobileExpanded(!isMobileExpanded);
+  const renderTabContent = () => {
+    switch(activeTab) {
+      case 'info':
+        return (
+          <>
+            <About />
+            <Languages />
+            <Skill />
+            <Badges />
+            <TradeCertificates />
+            <PastWorks />
+            <AdditionalInfo />
+          </>
+        );
+      case 'price':
+        return <PriceTable />;
+      case 'reviews':
+        return <RatingsAndReviews />;
+      default:
+        return null;
+    }
   };
 
   return (
-    <div className="text-black  w-full">
+    <div className="text-black w-full">
       <Header />
-      <div className="container mx-auto">
-        <div className="lg:px-16 xs:px-4 ">
+      <div className="container mx-auto pt-20 md:pt-40">
+        <div className="lg:px-16 xs:px-4">
           <HeroImage />
           <div className="lg:flex justify-between max-w-[1310px] w-full">
             <div className="relative lg:pl-9 lg:pr-16 xs:pt-5 md:pt-2 max-w-[856x] w-full">
               <Name />
-              <div className="md:hidden">
-                <PriceTable />
+              
+              {/* Mobile Tab Navigation */}
+              <div className="md:hidden sticky top-0 bg-bg-info z-50 -mx-4 px-4 py-2 mb-3 border-b">
+                <div className="flex font-circular-std justify-between gap-2">
+                  <button 
+                    onClick={() => setActiveTab('info')}
+                    className={`flex-1 py-2 px-4  text-sm font-medium ${
+                      activeTab === 'info' ? ' text-black ' : 'text-text-gray'
+                    }`}
+                  >
+                    Info
+                  </button>
+                  <button 
+                    onClick={() => setActiveTab('price')}
+                    className={`flex-1 py-2 px-4  text-sm font-medium ${
+                      activeTab === 'price' ? ' text-black ' : 'text-text-gray'
+                    }`}
+                  >
+                    Price Table
+                  </button>
+                  <button 
+                    onClick={() => setActiveTab('reviews')}
+                    className={`flex-1 py-2 px-4  text-sm font-medium ${
+                      activeTab === 'reviews' ? ' text-black ' : 'text-text-gray'
+                    }`}
+                  >
+                    Reviews
+                  </button>
+                </div>
               </div>
-              <div className="xs:hidden md:block">
+
+              {/* Mobile Content */}
+              <div className="md:hidden">
+                {renderTabContent()}
+              </div>
+
+              {/* Desktop Content */}
+              <div className="hidden md:block">
                 <About />
                 <Languages />
-              </div>
-              <Skill />
-
-              {/* Preview content with overlay when not expanded */}
-              {!isMobileExpanded && (
-                <div className="md:hidden relative h-[305px] overflow-hidden -mx-4 my-5">
-                  {/* Simple transparent white overlay */}
-                  <div className="absolute inset-0 bg-white/60 z-10" />
-
-                  {/* Preview content with reduced opacity */}
-                  <div className="opacity-50">
-                    <PastWorks />
-                    <RatingsAndReviews />
-                    <div className="max-w-[434px] w-full">
-                      <Badges />
-                      <TradeCertificates />
-                      <AdditionalInfo />
-                    </div>
-                  </div>
-
-                  {/* Centered View More Button */}
-                  <div className="absolute bottom-1/2 translate-y-1/2 left-0 right-0 z-20 px-4 ">
-                    <button
-                      onClick={toggleMobileView}
-                      className="w-72 h-14 px-11 py-3 max-w-md mx-auto bg-black text-white py-3 px-4 rounded-full text-base font-circular-std font-medium block"
-                    >
-                      VIEW MORE
-                    </button>
-                  </div>
-                </div>
-              )}
-
-              {/* Expanded content */}
-              {isMobileExpanded && (
-                <>
-                  <div className="md:hidden block">
-                    <PastWorks />
-                    <RatingsAndReviews />
-                    <TradeCertificates />
-                    <AdditionalInfo />
-                  </div>
-                </>
-              )}
-
-              {/* Desktop content */}
-              <div className="xs:hidden md:block">
+                <Skill />
                 <PastWorks />
                 <RatingsAndReviews />
               </div>
             </div>
 
-            {/* Right sidebar content with responsive layout */}
-            <div className="lg:max-w-[434px] md:w-full  lg:pl-0 xs:hidden md:block w-full">
-              {/* PriceTable and Badges row */}
+            {/* Right sidebar content - Desktop only */}
+            <div className="lg:max-w-[434px] md:w-full lg:pl-0 hidden md:block">
               <div className="md:flex md:gap-4 lg:block">
-                <div className="md:w-[434px] lg:mb-10 lg:w-full md:block hidden">
+                <div className="md:w-[434px] lg:mb-10 lg:w-full">
                   <PriceTable />
                 </div>
                 <div className="md:w-1/2 lg:w-full">
                   <Badges />
                 </div>
               </div>
-
-              {/* TradeCertificates and AdditionalInfo row */}
-              <div className="xs:hidden  md:flex md:gap-4 lg:block mt-8">
+              <div className="md:flex md:gap-4 lg:block mt-8">
                 <div className="md:w-1/2 lg:w-full">
                   <TradeCertificates />
                 </div>
@@ -109,18 +114,6 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
-          {/* Mobile View Less Button */}
-          {isMobileExpanded && (
-            <div className="md:hidden mt-8 mb-8">
-              <button
-                onClick={toggleMobileView}
-                className="w-full bg-black text-white py-3 px-4 rounded-full text-base font-medium"
-              >
-                VIEW LESS
-              </button>
-            </div>
-          )}
         </div>
       </div>
       <Footer />
