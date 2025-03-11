@@ -24,10 +24,18 @@ function MyApp({ Component, pageProps }) {
           description: 'Find reliable professionals for all your home service needs. Expert handymen, plumbers, electricians, and more with verified credentials and customer reviews.',
           images: [
             {
-              url: '/image/logo.png',
+              url: '/Image/logo.png',
               width: 1200,
               height: 630,
+              alt: 'Flex Crew Logo',
+              type: 'image/png',
+            },
+            {
+              url: '/Image/b2.png',
+              width: 1080,
+              height: 1080,
               alt: 'Flex Crew Services',
+              type: 'image/png',
             }
           ],
           site_name: 'Flex Crew',
