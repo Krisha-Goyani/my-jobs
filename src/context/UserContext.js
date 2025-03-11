@@ -14,9 +14,9 @@ export const UserProvider = ({ children }) => {
         about: 'Reliable and trustworthy professional. I bring all necessary tools and materials. Specialize in both interior and exterior masonry work. Some exceptional tasks may incur additional charges. Please consider that the average time for a job: Small repair takes 2h; Patio construction is 3h; Full wall construction takes 4h.',
         languages: ['English', 'Spanish', 'French', 'German', 'Dutch', 'Chinese', 'Russian'],
         badges: [
-            { id: 1, type: 'phone', status: 'active' },
-            { id: 2, type: 'email', status: 'active' },
-            { id: 3, type: 'id', status: 'active' }
+            { id: 1, type: 'phone', status: 'active', isVerified: true },
+            { id: 2, type: 'email', status: 'active', isVerified: true },
+            { id: 3, type: 'id', status: 'active', isVerified: false }
         ],
         tradeCertificates: [
             { id: 1, image: '/image/c1.png', alt: 'Certificate 1' },
