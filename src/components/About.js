@@ -31,7 +31,7 @@ const About = () => {
     };
 
     return (
-        <div className="max-w-[776px] w-full mb-10">
+        <div className="max-w-[776px] w-full mb-5 md:mb-10">
             <StyledHeading>About</StyledHeading>
             <div className="relative">
                 <p 

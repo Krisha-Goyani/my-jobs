@@ -7,7 +7,7 @@ const TradeCertificates = () => {
   const { userData } = useContext(UserContext);
 
   return (
-    <div className="mb-10">
+    <div className="mb-5 md:mb-10">
       <StyledHeading>Trade Certifications</StyledHeading>
       <div className="grid xs:grid-cols-3 xs:max-w-[280px] xs:gap-2 md:max-w-[325px]
                           lg:max-w-[434px] md:grid-cols-3 md:gap-2 mt-4">

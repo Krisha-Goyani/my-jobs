@@ -7,9 +7,9 @@ const Badges = () => {
   const { userData } = useContext(UserContext);
 
   return (
-    <div className="mb-8">
+    <div className="mb-5 md:mb-8">
       <StyledHeading>Badges</StyledHeading>
-      <div className="flex gap-4 mt-4">
+      <div className="flex gap-4 mt-2 md:mt-4">
         {userData.badges.map((badge) => (
           <div key={badge.id} className="relative">
             <Image

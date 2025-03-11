@@ -58,7 +58,7 @@ const RatingsAndReviews = () => {
     <div className="mt-8 font-circular-std">
       <StyledHeading>Ratings & Reviews</StyledHeading>
       <div className="mt-4">
-        <div className="flex md:gap-7 max-h-[100px] xs:max-w-[678px] md:max-w-[419px] w-full h-full">
+        <div className="flex gap-3 md:gap-7 max-h-[100px] xs:max-w-[678px] md:max-w-[419px] w-full h-full">
           <div className="flex flex-col w-28 self-center">
             <div className="flex items-center">
               <span className="text-xl md:text-3xl font-medium">4.0</span>

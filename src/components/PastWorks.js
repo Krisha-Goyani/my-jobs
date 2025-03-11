@@ -15,9 +15,9 @@ const PastWorks = () => {
   };
 
   return (
-    <div className="mt-10">
+    <div className="mt-5 md:mt-10">
       <StyledHeading>Past Works</StyledHeading>
-      <div className="mt-4 relative">
+      <div className="mt-2 md:mt-4 relative">
         {/* Red timeline line - Behind the dots */}
         <div className="absolute left-2.5 top-2 bottom-[14px] w-[2px] bg-text-red" />
         

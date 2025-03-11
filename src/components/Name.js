@@ -5,7 +5,7 @@ import Image from "next/image";
 const Name = () => {
   const { userData } = useContext(UserContext);
   return (
-    <div className="mb-8">
+    <div className="mb-5 md:mb-8">
       <h1 className="md:text-4xl xs:text-2xl font-bold oswald">
         {userData.name}
       </h1>

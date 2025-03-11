@@ -22,9 +22,9 @@ const Skill = () => {
     };
     
     return (
-        <div className="mt-8">
+        <div className="mt-5 md:mt-8">
             <StyledHeading>Skills</StyledHeading>
-            <div className="mt-4 flex flex-col gap-3 max-w-[776px] w-full">
+            <div className="mt-2 md:mt-4 flex flex-col gap-3 max-w-[776px] w-full">
                 {visibleSkills.map((skill, index) => (
                     <div key={index} className="bg-[#F8F9FC] rounded-lg md:px-5 px-3 py-3">
                         <h3 className="text-sm text-[#1A1C1E] font-medium font-circular-std">

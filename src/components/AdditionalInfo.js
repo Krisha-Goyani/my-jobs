@@ -7,9 +7,9 @@ const AdditionalInfo = () => {
   const { userData } = useContext(UserContext);
 
   return (
-    <div className="mb-8 xs:mt-5 md:mt-0">
+    <div className="mb-5 md:mb-8 xs:mt-5 md:mt-0">
       <StyledHeading>Additional Info</StyledHeading>
-      <div className="space-y-4 mt-5">
+      <div className="space-y-4 mt-2 md:mt-5">
         {userData.additionalInfo.map((info) => (
           <div key={info.id} className="flex gap-4 items-center bg-bg-gray-light border border-border-gray-light rounded-xl py-4 px-5">
               <Image

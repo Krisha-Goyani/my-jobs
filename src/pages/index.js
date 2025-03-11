@@ -24,10 +24,10 @@ const HomePage = () => {
             <About />
             <Languages />
             <Skill />
-            <Badges />
-            <TradeCertificates />
             <PastWorks />
             <AdditionalInfo />
+            <Badges />
+            <TradeCertificates />
           </>
         );
       case 'price':
