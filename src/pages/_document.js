@@ -16,7 +16,6 @@ export default function Document() {
         <meta property="og:title" content="Flex Crew - Professional At-Home Services" />
         <meta property="og:description" content="Find reliable professionals for all your home service needs. Expert handymen, plumbers, electricians, and more with verified credentials and customer reviews." />
         <meta property="og:image" content="https://my-jobs1.netlify.app/Image/flex-crew.png" />
-        <meta property="og:image:width" content="1080" />
         <meta property="og:image:height" content="600" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="my-jobs1.netlify.app" />
