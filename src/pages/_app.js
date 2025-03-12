@@ -11,7 +11,7 @@ import Head from 'next/head';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
+      <Head> 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:image" content="https://my-jobs1.netlify.app/Image/logo.png" />
         <meta property="og:image:width" content="1200" />
@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
             {
               url: '/Image/b2.png',
               width: 1080,
-              height: 1080,
+              height: 630,
               alt: 'Flex Crew Services',
               type: 'image/png',
             }
