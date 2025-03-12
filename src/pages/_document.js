@@ -16,7 +16,7 @@ export default function Document() {
         <meta property="og:site_name" content="FlexCrew USA" />
         <meta property="og:title" content="FlexCrew USA - Professional Staffing Solutions" />
         <meta property="og:description" content="Your trusted partner in staffing solutions. We connect talented professionals with leading companies across industries." />
-        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_DOMAIN}/Image/flex-crew.png`} />
+        <meta property="og:image" content="https://my-jobs1.netlify.app/Image/flex-crew.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="FlexCrew USA Company Logo" />
@@ -27,7 +27,7 @@ export default function Document() {
         <meta property="twitter:url" content="https://flexcrewusa.com" />
         <meta name="twitter:title" content="FlexCrew USA - Professional Staffing Solutions" />
         <meta name="twitter:description" content="Your trusted partner in staffing solutions. We connect talented professionals with leading companies across industries." />
-        <meta name="twitter:image" content={`${process.env.NEXT_PUBLIC_DOMAIN}/Image/flex-crew.png`} />
+        <meta name="twitter:image" content="https://my-jobs1.netlify.app/Image/flex-crew.png" />
         <meta name="twitter:image:alt" content="FlexCrew USA Company Logo" />
         <meta name="twitter:creator" content="@FlexCrewUSA" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
