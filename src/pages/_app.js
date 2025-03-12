@@ -68,7 +68,7 @@ function MyApp({ Component, pageProps }) {
           description: 'Find reliable professionals for all your home service needs. Expert handymen, plumbers, electricians, and more with verified credentials and customer reviews.',
           images: [
             {
-              url: 'https://my-jobs1.netlify.app/Image/logo-og.png',
+              url: 'https://my-jobs1.netlify.app/Image/logo.png',
               width: 1080,
               height: 600,
               alt: 'Flex Crew Logo',
