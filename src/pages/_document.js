@@ -16,7 +16,7 @@ export default function Document() {
         <meta property="og:site_name" content="FlexCrew USA" />
         <meta property="og:title" content="FlexCrew USA - Professional Design Project | Figma" />
         <meta property="og:description" content="Explore our professional design project created with Figma. Innovative solutions for modern business needs." />
-        <meta property="og:image" content="https://www.figma.com/file/CsYSPsEWxTmK8diHP7H0es/thumbnail?ver=thumbnails%2F08d25fb3-776f-441d-839b-01282962dab5" />
+        <meta property="og:image" content="https://my-jobs1.netlify.app/Image/flex-crew.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="FlexCrew USA Design Preview" />
@@ -27,7 +27,7 @@ export default function Document() {
         <meta property="twitter:url" content="https://www.figma.com/design/csyspsewxtmk8dihp7h0es/flexcrew-usa" />
         <meta name="twitter:title" content="FlexCrew USA - Professional Design Project | Figma" />
         <meta name="twitter:description" content="Explore our professional design project created with Figma. Innovative solutions for modern business needs." />
-        <meta name="twitter:image" content="https://www.figma.com/file/CsYSPsEWxTmK8diHP7H0es/thumbnail?ver=thumbnails%2F08d25fb3-776f-441d-839b-01282962dab5" />
+        <meta name="twitter:image" content="https://my-jobs1.netlify.app/Image/flex-crew.png" />
         <meta name="twitter:image:alt" content="FlexCrew USA Design Preview" />
         <meta name="twitter:creator" content="@YourTwitterHandle" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
