@@ -5,31 +5,31 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="UTF-8" />
-        <meta name="description" content="Professional design project created with Figma for FlexCrew USA. Explore our innovative design solutions and creative work." />
-        <meta name="keywords" content="Figma, design, FlexCrew USA, UI design, UX design, web design" />
+        <meta name="description" content="FlexCrew USA - Your trusted partner in staffing solutions. We connect talented professionals with leading companies across industries." />
+        <meta name="keywords" content="FlexCrew USA, staffing solutions, job recruitment, employment agency, career opportunities, professional staffing" />
         <meta name="author" content="FlexCrew USA" />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
-        <link rel="canonical" href="https://www.figma.com/design/csyspsewxtmk8dihp7h0es/flexcrew-usa" />
-        <meta property="og:url" content="https://www.figma.com/design/csyspsewxtmk8dihp7h0es/flexcrew-usa" />
+        <link rel="canonical" href="https://flexcrewusa.com" />
+        <meta property="og:url" content="https://flexcrewusa.com" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="FlexCrew USA" />
-        <meta property="og:title" content="FlexCrew USA - Professional Design Project | Figma" />
-        <meta property="og:description" content="Explore our professional design project created with Figma. Innovative solutions for modern business needs." />
-        <meta property="og:image" content="https://my-jobs1.netlify.app/Image/logo.png" />
+        <meta property="og:title" content="FlexCrew USA - Professional Staffing Solutions" />
+        <meta property="og:description" content="Your trusted partner in staffing solutions. We connect talented professionals with leading companies across industries." />
+        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_DOMAIN}/Image/flex-crew.png`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="FlexCrew USA Design Preview" />
+        <meta property="og:image:alt" content="FlexCrew USA Company Logo" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@YourTwitterHandle" />
-        <meta property="twitter:domain" content="figma.com" />
-        <meta property="twitter:url" content="https://www.figma.com/design/csyspsewxtmk8dihp7h0es/flexcrew-usa" />
-        <meta name="twitter:title" content="FlexCrew USA - Professional Design Project | Figma" />
-        <meta name="twitter:description" content="Explore our professional design project created with Figma. Innovative solutions for modern business needs." />
-        <meta name="twitter:image" content="https://my-jobs1.netlify.app/Image/flex-crew.png" />
-        <meta name="twitter:image:alt" content="FlexCrew USA Design Preview" />
-        <meta name="twitter:creator" content="@YourTwitterHandle" />
+        <meta name="twitter:site" content="@FlexCrewUSA" />
+        <meta property="twitter:domain" content="flexcrewusa.com" />
+        <meta property="twitter:url" content="https://flexcrewusa.com" />
+        <meta name="twitter:title" content="FlexCrew USA - Professional Staffing Solutions" />
+        <meta name="twitter:description" content="Your trusted partner in staffing solutions. We connect talented professionals with leading companies across industries." />
+        <meta name="twitter:image" content={`${process.env.NEXT_PUBLIC_DOMAIN}/Image/flex-crew.png`} />
+        <meta name="twitter:image:alt" content="FlexCrew USA Company Logo" />
+        <meta name="twitter:creator" content="@FlexCrewUSA" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="apple-mobile-web-app-title" content="FlexCrew USA" />
