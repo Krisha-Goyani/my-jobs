@@ -24,9 +24,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="keywords" content="home services, handyman, plumber, electrician, professional services, home repair, maintenance" />
         <meta name="author" content="Flex Crew" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:image" content="https://my-jobs1.netlify.app/Image/logo.png" />
+        <meta property="og:image" content="https://my-jobs1.netlify.app/Image/logo-og.png" />
         <meta property="og:image:width" content="1080" />
-        <meta property="og:image:height" content="608" />
+        <meta property="og:image:height" content="600" />
         <meta property="og:image:alt" content="Flex Crew Logo" />
         <meta property="og:image:type" content="image/png" />
         
@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }) {
         titleTemplate="%s | Flex Crew"
         defaultTitle="Flex Crew - Professional At-Home Services"
         description="Find reliable professionals for all your home service needs. Expert handymen, plumbers, electricians, and more with verified credentials and customer reviews."
-        canonical="https://www.flexcrew.com/"
+        canonical="https://my-jobs1.netlify.app/"
         additionalMetaTags={[
           {
             property: 'dc:creator',
@@ -62,13 +62,13 @@ function MyApp({ Component, pageProps }) {
         openGraph={{
           type: 'website',
           locale: 'en_US',
-          url: 'https://www.flexcrew.com/',
+          url: 'https://my-jobs1.netlify.app/',
           siteName: 'Flex Crew',
           title: 'Flex Crew - Professional At-Home Services',
           description: 'Find reliable professionals for all your home service needs. Expert handymen, plumbers, electricians, and more with verified credentials and customer reviews.',
           images: [
             {
-              url: 'https://my-jobs1.netlify.app/Image/logo.png',
+              url: 'https://my-jobs1.netlify.app/Image/logo-og.png',
               width: 1080,
               height: 600,
               alt: 'Flex Crew Logo',
