@@ -16,7 +16,7 @@ export default function Document() {
         <meta property="og:site_name" content="FlexCrew USA" />
         <meta property="og:title" content="FlexCrew USA - Professional Design Project | Figma" />
         <meta property="og:description" content="Explore our professional design project created with Figma. Innovative solutions for modern business needs." />
-        <meta property="og:image" content="https://my-jobs1.netlify.app/Image/flex-crew.png" />
+        <meta property="og:image" content="https://my-jobs1.netlify.app/Image/logo.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="FlexCrew USA Design Preview" />
