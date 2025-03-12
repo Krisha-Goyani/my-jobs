@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
             {
               url: '/Image/b2.png',
               width: 1080,
-              height: 630,
+              height: 200,
               alt: 'Flex Crew Services',
               type: 'image/png',
             }
